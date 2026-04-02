@@ -6,7 +6,8 @@ Data Citation & Acknowledgments**
 The raw data utilized in this study is sourced from the public repository:
 * **Dataset:** *Dataset for Photovoltaic Systems Monitoring and Fault Detection*
 * **Authors:** Lazzaretti, R. L., Costa, C. H., Rodrigues, M. P., et al.
-* **Source:** [Mendeley Data, V1 (2020)](https://data.mendeley.com/datasets/p9nt9635jm/1)
+* **Source:** [pv_fault_dataset](https://github.com/clayton-h-costa/pv_fault_dataset)
+* **Original Paper:** [Lazzaretti, et al. (2020)](https://www.mdpi.com/1424-8220/20/17/4688)
 * **License:** CC BY 4.0
 
 This research acknowledges the contribution of the original authors in providing a high-frequency, multi-scenario dataset that enables the benchmarking of advanced clustering algorithms.
