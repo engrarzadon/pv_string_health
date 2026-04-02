@@ -1,4 +1,4 @@
-# Autonomous PV String Health Monitoring via Unsupervised Learning
+# AUTONOMOUS PV FAULT DETECTION AND DIAGNOSIS SYSTEM via Unsupervised Learning
 
 This project develops a robust, unsupervised diagnostic framework for solar string inverter systems. By leveraging a 1.3-million-row dataset (Lazzaretti et al., 2020), the study compares the efficiency of **K-Means** (Partition-based) and **Gaussian Mixture Models** (Distribution-based) in identifying module-level faults without prior labeling.
 
