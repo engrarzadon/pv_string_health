@@ -2,6 +2,15 @@
 
 This project develops a robust, unsupervised diagnostic framework for solar string inverter systems. By leveraging a 1.3-million-row dataset (Lazzaretti et al., 2020), the study compares the efficiency of **K-Means** (Partition-based) and **Gaussian Mixture Models** (Distribution-based) in identifying module-level faults without prior labeling.
 
+Data Citation & Acknowledgments**
+The raw data utilized in this study is sourced from the public repository:
+* **Dataset:** *Dataset for Photovoltaic Systems Monitoring and Fault Detection*
+* **Authors:** Lazzaretti, R. L., Costa, C. H., Rodrigues, M. P., et al.
+* **Source:** [Mendeley Data, V1 (2020)](https://data.mendeley.com/datasets/p9nt9635jm/1)
+* **License:** CC BY 4.0
+
+This research acknowledges the contribution of the original authors in providing a high-frequency, multi-scenario dataset that enables the benchmarking of advanced clustering algorithms.
+
 ## **1. Research Objectives**
 * **Feature Engineering:** Transform raw electrical and environmental sensors into physically meaningful ratios (Power Difference, Relative Current Mismatch).
 * **Dimensionality Reduction:** Utilize **PCA** to compress 20+ variables into 8 Principal Components maintaining 95% variance.
