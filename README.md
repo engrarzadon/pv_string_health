@@ -61,20 +61,6 @@ While K-Means produced better clusters as evidence by higher Silhouette, **GMM w
     - Run the `KMeans_implementation.ipynb` and `GMM_implementation.ipynb` notebooks for model training and evaluation.
     - Run the `bias_analysis.ipynb` for analysing the bias of the GMM.
 
-## **6. Ethical AI & Interpretability**
-
-### **A. Explainability & Traceback Logic**
-To move beyond the "Black Box" nature of unsupervised learning, this project utilizes **SHAP (SHapley Additive exPlanations)**. This allows for a direct "Traceback" from abstract Principal Components to physical sensor data. For example, the model's reliance on **PC4** was traced back to **Voltage-Temperature Ratios**, providing a physically-grounded justification for maintenance alerts.
-
-### **B. Human-in-the-Loop (HITL) Philosophy**
-This framework is designed as a **Decision-Support Tool**, not a replacement for human expertise. 
-* **Triage vs. Action:** The GMM identifies anomalies and provides "Confidence Scores" via probabilistic soft-clustering, filtering rows of noise into actionable insights.
-* **Expert Validation:** The ethical responsibility for final maintenance actions—such as module replacement or string isolation—remains with the human operator, who uses the model's transparency (PCA Loadings) to verify the diagnosis before dispatching crews.
-
-### **C. Bias Mitigation & Fairness**
-* **Environmental Bias:** Implemented nocturnal filtering (clipping irradiance < 10 W/m²) to prevent the model from learning physically impossible "Nighttime Faults."
-* **Measurement Bias:** Utilized Z-score scaling and relative feature ratios ($p\_diff$, $i\_rel\_diff$) to ensure the AI remains sensitive to string asymmetry rather than fluctuating weather patterns.
-* **Waste Reduction:** By accurately distinguishing between **Partial Shading** and **Permanent Degradation**, the model prevents the premature disposal of healthy PV modules, supporting the circular economy of the green energy sector.
 
 ---
 
